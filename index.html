@@ -7,49 +7,43 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="app" ng-controller="MyController as vm">
-    <div class="content-wrapper">
-      <div class="top-content">
+    <img class="logo-img" src="images/MCI_LandingPage_HeaderLogo.png" alt="" />
 
+    <div class="main-content">
+      <div class="program-links">
+        <span ng-mouseover="vm.showProgram('backpack')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-backpack/"><img class="image-link-backpack" src="images/MicahsBackPackICON_Web.png" alt="" /></a></span>
+        <span ng-mouseover="vm.showProgram('mobile')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-mobile-backpack/"><img class="image-link-mobile" src="images/MicahsBPonWheelsICON_Web.png" alt="" /></a></span>
+        <span ng-mouseover="vm.showProgram('closet')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-closet/"><img class="image-link-closet" src="images/MicahsClosetICON_Web.png" alt="" /></a></span>
+        <span ng-mouseover="vm.showProgram('garden')" ng-mouseout="vm.setDefaults()"><a href="http://micahsgarden.org/"><img class="image-link-garden" src="images/MicahsGardenICON_Web.png" alt="" /></a></span>
+        <span ng-mouseover="vm.showProgram('soup')" ng-mouseout="vm.setDefaults()"><a href="http://micahssoupforseniors.org/"><img class="image-link-soup" src="images/MicahsSoup4SeniorsICON_Web.png" alt="" /></a></span>
       </div>
-      <div class="main-content">
-        <div class="main-logo">
-          <h2>image</h2>
-        </div>
-        <div class="program-links">
-          <span ng-mouseover="vm.showProgram('backpack')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-backpack/">Micah's Backpack</a></span>
-          <span ng-mouseover="vm.showProgram('mobile')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-mobile-backpack/">Micah's Mobile Backpack</a></span>
-          <span ng-mouseover="vm.showProgram('closet')" ng-mouseout="vm.setDefaults()"><a href="http://micahci.org/micahs-closet/">Micah's Closet</a></span>
-          <span ng-mouseover="vm.showProgram('garden')" ng-mouseout="vm.setDefaults()"><a href="http://micahsgarden.org/">Micah's Garden</a></span>
-          <span ng-mouseover="vm.showProgram('soup')" ng-mouseout="vm.setDefaults()"><a href="http://micahssoupforseniors.org/">Micah's Soup for Senior</a></span>
-        </div>
-      </div>
-      <div class="program-content">
-        <section ng-show="vm.showGeneral" class="program-information main-program">
-          Micah's Caring Initiative has a strong, community-supported tradition of meeting the basic human needs of children, families, and elders in our area.  By feeding and clothing the most vulnerable in our community we actively show them that their community cares about them.
-        </section>
-        <section ng-show="vm.showBackpack" class="program-information backpack-program">
-          Micah's Backpack addresses food insecurity of youth in the local schools by sharing 6 weekend meals plus snacks delivered directly to the students in the schools.  Micah's Backpack serves 279 students in 8 Blacksburg schools.
-        </section>
-        <section ng-show="vm.showMobile" class="program-information backpack-mobile-program">
-          Micah's Mobile Backpack delivers weekend food to children via a food pantry on wheels.  This is typically done during the summers when the bags can't be delivered to the schools.  Educators often accompany volunteers and may also include a mobile library.
-        </section>
-        <section ng-show="vm.showCloset" class="program-information closet-program">
-          Micah's Closet gives a week's worth of new school clothes, pajamas, shoes, socks and a jacket to children in need.
-        </section>
-        <section ng-show="vm.showGarden" class="program-information garden-program">
-          Micah's Garden grows fresh produce for Micah's Caring Initiative programs.  Half of the garden is used for the programs and the other half of the garden is rented out to lower growers who either keep their produce or donate it to the programs.
-        </section>
-        <section ng-show="vm.showSoup" class="program-information soup-program">
-          Micah's Soup for Seniors provides a week of meals for seniors livin on limited resources in the Warm Hearth community.  This program serves approximately 100 seniors.
-        </section>
-      </div>
-      <div class="footer-content">
-        <span><a href="http://micahci.org/about-us/staff/" class="footer-link">Staff</a></span>
-        <span><a href="http://micahci.org/about-us/partners/" class="footer-link">Partners</a></span>
-        <span><a href="http://micahci.org/contacting/" class="footer-link">Contact Us</a></span>
-        <span><a href="http://www.volunteerspot.com" class="footer-link">Volunteer</a></span>
-        <span><a href="http://micahci.org/giving/" class="footer-link">Donate</a></span>
-      </div>
+    </div>
+    <div class="program-content">
+      <section ng-show="vm.showGeneral" class="program-information main-program">
+        Micah's Caring Initiative has a strong, community-supported tradition of meeting the basic human needs of children, families, and elders in our area.  By feeding and clothing the most vulnerable in our community we actively show them that their community cares about them.
+      </section>
+      <section ng-show="vm.showBackpack" class="program-information backpack-program">
+        Micah's Backpack addresses food insecurity of youth in the local schools by sharing 6 weekend meals plus snacks delivered directly to the students in the schools.  Micah's Backpack serves 279 students in 8 Blacksburg schools.
+      </section>
+      <section ng-show="vm.showMobile" class="program-information backpack-mobile-program">
+        Micah's Mobile Backpack delivers weekend food to children via a food pantry on wheels.  This is typically done during the summers when the bags can't be delivered to the schools.  Educators often accompany volunteers and may also include a mobile library.
+      </section>
+      <section ng-show="vm.showCloset" class="program-information closet-program">
+        Micah's Closet gives a week's worth of new school clothes, pajamas, shoes, socks and a jacket to children in need.
+      </section>
+      <section ng-show="vm.showGarden" class="program-information garden-program">
+        Micah's Garden grows fresh produce for Micah's Caring Initiative programs.  Half of the garden is used for the programs and the other half of the garden is rented out to lower growers who either keep their produce or donate it to the programs.
+      </section>
+      <section ng-show="vm.showSoup" class="program-information soup-program">
+        Micah's Soup for Seniors provides a week of meals for seniors livin on limited resources in the Warm Hearth community.  This program serves approximately 100 seniors.
+      </section>
+    </div>
+    <div class="footer-content">
+      <span><a href="http://micahci.org/about-us/staff/" class="footer-link">Staff</a></span>
+      <span><a href="http://micahci.org/about-us/partners/" class="footer-link">Partners</a></span>
+      <span><a href="http://micahci.org/contacting/" class="footer-link">Contact Us</a></span>
+      <span><a href="http://www.volunteerspot.com" class="footer-link">Volunteer</a></span>
+      <span><a href="http://micahci.org/giving/" class="footer-link">Donate</a></span>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
