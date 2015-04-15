@@ -145,6 +145,23 @@
   margin-bottom: -10px;
 }
 
+.staff-title {
+  color: #898989;
+  font-size: 36px;
+  text-align: center;
+  font: 800 36px'Lato', sans-serif;
+  margin-bottom: 40px;
+}
+
+.staff-picture {
+  color: #aaa;
+}
+
+.staff-picture:hover {
+  background-color: #aaa;
+  opacity: .3;
+}
+
 .main-program-sub-title {
   color: #464646;
   font-size: 32px;
@@ -293,11 +310,13 @@
   text-decoration: none;
 }
 
-.butn-main {
+.butn-main,
+.butn-main:link {
   border: 3px solid black;
   color: black;
   margin-top: 30px;
   width: 320px;
+  text-decoration: none;
 }
 
 .butn-main:hover,
