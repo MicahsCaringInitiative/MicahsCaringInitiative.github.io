@@ -105,8 +105,8 @@
 }
 
 .program-information {
-  font: 100 30px 'Lato', sans-serif;
-  height: 600px;
+  font: 400 30px 'Lato', sans-serif;
+  height: 470px;
   text-align: justify;
 }
 
@@ -118,6 +118,16 @@
 .program-information:nth-child(even) {
     background-color: #fff;
     color: #121212;
+}
+
+.container.program-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.logo-container {
+	/*text-align: center;*/
 }
 
 .main-program {
@@ -180,10 +190,28 @@
   height: 125px;
 }
 
-.logo-mb {
-	position: absolute;
+.logo-mb-large {
 	width: 600px;
 	background-size: 100% auto;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.logo-mb-medium {
+	width: 400px;
+	background-size: 100% auto;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.logo-mb-small {
+	width: 700px;
+	background-size: 100% auto;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .btn-donate {
@@ -246,6 +274,10 @@
 	line-height: 1;
 	position: relative;
 	-webkit-font-smoothing: antialiased;
+}
+
+.butn-container {
+	text-align: center;
 }
 
 .butn-backpack {
