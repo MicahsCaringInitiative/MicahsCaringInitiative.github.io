@@ -234,6 +234,10 @@
 
 
 /* General button style (reset) */
+a.butn:visted {
+	text-decoration: none;
+}
+
 .butn {
 	border: none;
 	font-family: inherit;
@@ -285,63 +289,77 @@
 	color: #fff;
 }
 
-.butn-backpack:hover,
-.butn-backpack:active {
+a.butn-backpack:link,
+a.butn-backpack:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.butn-backpack:hover,
+a.butn-backpack:active {
 	color: #fff;
 	background: #1F91DB;
   text-decoration: none;
 }
 
-.butn-mobile-backpack {
+a.butn-mobile-backpack:link,
+a.butn-mobile-backpack:visited {
   border: 3px solid #FF6E00;
   color: black;
+	text-decoration: none;
 }
 
-.butn-mobile-backpack:hover,
-.butn-mobile-backpack:active {
+a.butn-mobile-backpack:hover,
+a.butn-mobile-backpack:active {
 	color: #fff;
 	background: #FF6E00;
   text-decoration: none;
 }
 
-.butn-garden {
+a.butn-garden:link,
+a.butn-garden:visited {
   border: 3px solid #59D43D;
   color: #fff;
+	text-decoration: none;
 }
 
-.butn-garden:hover,
-.butn-garden:active {
+a.butn-garden:hover,
+a.butn-garden:active {
 	color: #fff;
 	background: #59D43D;
   text-decoration: none;
 }
 
-.butn-closet {
+a.butn-closet:link,
+a.butn-closet:visited {
   border: 3px solid #FF0803;
   color: black;
+	text-decoration: none;
 }
 
-.butn-closet:hover,
-.butn-closet:active {
+a.butn-closet:hover,
+a.butn-closet:active {
 	color: #fff;
 	background: #FF0803;
   text-decoration: none;
 }
 
-.butn-soup {
+a.butn-soup:link,
+a.butn-soup:visited {
   border: 3px solid #9A4CC5;
   color: #fff;
+	text-decoration: none;
 }
 
-.butn-soup:hover,
-.butn-soup:active {
+a.butn-soup:hover,
+a.butn-soup:active {
 	color: #fff;
 	background: #9A4CC5;
   text-decoration: none;
 }
 
-.butn-main,
-.butn-main:link {
+a.butn-main:link,
+a.butn-main:visited {
   border: 3px solid black;
   color: black;
   margin-top: 30px;
@@ -349,8 +367,8 @@
   text-decoration: none;
 }
 
-.butn-main:hover,
-.butn-main:active {
+a.butn-main:hover,
+a.butn-main:active {
 	color: #fff;
 	background: black;
   text-decoration: none;
