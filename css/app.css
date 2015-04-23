@@ -120,14 +120,24 @@
     color: #121212;
 }
 
-.container.program-container {
+.program-container {
+	height: 470px;
+}
+
+.program-info {
+	display: block;
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .logo-container {
-	/*text-align: center;*/
+	height: 470px;
+	text-align: center;
 }
 
 .main-program {
@@ -192,25 +202,37 @@
 
 .logo-mb-large {
 	width: 600px;
-	background-size: 100% auto;
-	position: fixed;
+	display: block;
+	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .logo-mb-medium {
 	width: 400px;
-	background-size: 100% auto;
-	position: fixed;
+	display: block;
+	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
 .logo-mb-small {
 	width: 700px;
-	background-size: 100% auto;
-	position: fixed;
+	display: block;
+	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
